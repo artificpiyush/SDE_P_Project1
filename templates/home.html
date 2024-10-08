@@ -12,7 +12,9 @@
     <div class = "container">
       <h1>Welcome to My Image Classification Model !!</h1>
 
-      <img src = "https://345560d7-fc96-4a75-9907-ac70f16c7ec3-00-2ob7ljjw7mj3m.pike.replit.dev/static/img_for_project_sde.jpg" height = 400 >
+      <!-- <img src = "https://345560d7-fc96-4a75-9907-ac70f16c7ec3-00-2ob7ljjw7mj3m.pike.replit.dev/static/img_for_project_sde.jpg" height = 400 > -->
+
+      <img src="{{ url_for('static', filename='img_for_project_sde.jpg') }}" height="400">
 
       <h2>Please upload the image file</h2>
       <form action = "/upload" method = "POST"enctype = "multipart/form-data">
