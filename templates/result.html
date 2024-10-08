@@ -1,0 +1,35 @@
+<!-- <!DOCTYPE html>
+<html lang = "en">
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Classification Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    
+  </head>
+
+  <body>
+    <div class = "container">
+      <h1>Classification Result</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Percentage</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {% for percentage,class_name in zip(percentages,class_names) %}
+          <tr>
+            <td>{{class_name}}</td>
+            <td>{{percentage}}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <a href = "/">Upload another Image</a>
+    </div>
+  </body>
+</html> -->
