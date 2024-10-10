@@ -20,7 +20,7 @@ h1 {
 }
 
 table {
-  width: 1005px; /* Added 'px' for pixels */
+  width: 100%; 
   border-collapse: collapse;
   margin: 20px 0;
 }
@@ -55,4 +55,21 @@ button:hover {
 p {
   font-size: 1.2rem;
   color: #555;
+}
+
+/* Ensuring the table does not overflow its container */
+table {
+  table-layout: auto; 
+  word-wrap: break-word; 
+  overflow-x: auto; /*(Allowing horzontal scrolls)*/
+}
+
+/* Ensuring the table does not break the layout on smaller screens(Like our phones) */
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+      display: block; 
+  }
+  th, td {
+      width: 100%; 
+  }
 }
