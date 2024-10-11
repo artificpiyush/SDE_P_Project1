@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 50px;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 1);
+  width: 50%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+table {
+  width: 100%; 
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Ensuring the table does not overflow its container */
+table {
+  table-layout: auto; 
+  word-wrap: break-word; 
+  overflow-x: auto; /*(Allowing horzontal scrolls)*/
+}
+
+/* Ensuring the table does not break the layout on smaller screens(Like our phones) */
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+      display: block; 
+  }
+  th, td {
+      width: 100%; 
+  }
+}
